@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/35615c3804.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Alarm Clock</h1>
+             <!-- here will show the timing till the recent alarm rings --> 
+        </header>
+        <main>
+            <!-- current time -->
+            <div id="current-time"></div> 
+            <!-- after clicking on add icon an input box for setting alarm will appear  -->
+            <input type="time" id="alarmTime" step="1">
+            <input type="text" id="alarmMessage" placeholder="Alarm Message">
+            <button id="setAlarm" onclick="setAlarm()">Set Alarm</button>
+            <!-- a list of set alarms with a button to delete, which will be added when alarms are set-->
+            <h3>Alarm List</h3>
+            <ul id="alarmList"></ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
